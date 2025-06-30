@@ -9,20 +9,16 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Configurar la página de Streamlit
-st.set_page_config(page_title="Proyecto Testing", page_icon="💡", layout="wide")
+st.set_page_config(page_title="Chat interactivo sobre Ciberseguridad", page_icon="💡", layout="wide")
 
 # Forzar scroll al tope al cargar
 st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
 
-st.title("💬 Aprende X tema/idioma")
+st.title("💬 Chat interactivo sobre Ciberseguridad")
 
 
 texto = """
-Las interfaces usuarias son el punto de contacto entre las personas y los sistemas, en donde las personas, o usuarios del sistema, navegan los contenidos, acceden a las funcionalidades y completan las tareas. El diseño de estos sistemas tiene un gran impacto en la usabilidad, accesibilidad y experiencia del usuario. 
-
-Actualmente, la interacción humano-máquina se enfrenta al desafío de ofrecer experiencias digitales que sean cada vez más inclusivas, eficientes y personalizadas. Debido a la creciente diversidad de usuarios, dispositivos y contextos de uso, los modelos tradicionales como los basados en esquemas estáticos o uniformes, resultan ser insuficientes para satisfacer las demandas actuales. A raíz de esto, surgen las interfaces de usuario adaptativas y personalizadas como una solución para garantizar la usabilidad y la accesibilidad en entornos dinámicos, híbridos y heterogéneos. 
-
-Estas interfaces no solo permiten ajustar el contenido, la disposición y los elementos visuales según las características del usuario como la edad, habilidades y estilo cognitivo, sino que también responde a factores contextuales (entorno físico, el dispositivo que se utiliza o el estado emocional del usuario). La incorporación de tecnologías como la inteligencia artificial simbólica, el aprendizaje de refuerzo, las ontologías semánticas y las interfaces de usuario distribuidas han posibilitado el diseño de sistemas que sean capaces de adaptar la experiencia en tiempo real, de manera autónoma y escalable.
+Aprende sobre phishing, malware y ataques DDoS a través de explicaciones paso a paso. Haz preguntas y el sistema ajustará el contenido según tus respuestas para ayudarte a entender mejor estos riesgos digitales.
 """
 
 
