@@ -12,9 +12,7 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Configurar la página de Streamlit
-st.set_page_config(
-    page_title="Chat interactivo sobre Ciberseguridad", page_icon="💡", layout="wide"
-)
+st.set_page_config(page_title="Chat interactivo sobre Ciberseguridad", page_icon="💡", layout="wide")
 
 # Forzar scroll al tope al cargar
 st.markdown("<script>window.scrollTo(0, 0);</script>", unsafe_allow_html=True)
@@ -48,7 +46,7 @@ if "messages" not in st.session_state:
         },
         {
             "role": "assistant",
-            "content": "¡Hola! 👋 Puedes hacerme preguntas sobre el texto que estás revisando.",
+            "content": "¡Hola! 👋",
         },
     ]
 
